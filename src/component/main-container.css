@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .mainC {
+    background-color: lightcyan;
+    min-height: 90vh;
+    max-height: 90vh;
+    border-radius: 40px;
+    overflow: auto;
+    padding-top: 130px;
+  } 
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+  }
+  
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+  }
+  
+  .text-tanpa-biaya {
+    color: darkcyan;
+    font-weight: bold;
+  }
+  
+  
+  .text-content h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+  
+  .text-content h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .text-content p {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.5rem;
+  }
+  
+  .image-content img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .btn1, .btn2 {
+    padding: 20px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 50px; /* Membuat tombol berbentuk elips */
+  }
+  
+  .btn1 {
+    background-color: darkcyan;
+    color: aliceblue;
+    border: none;
+  }
+  
+  .btn2 {
+    background-color: aliceblue;
+    color: black;
+    border: 2px solid darkcyan;
+  }
+  
+  .btn1:hover, .btn2:hover {
+    background-color: cadetblue;
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .image-content img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  .btn2 a {
+    color: black;
+    text-decoration: none;
+  }
